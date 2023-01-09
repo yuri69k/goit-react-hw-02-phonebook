@@ -59,9 +59,8 @@ class App extends Component {
         <Form addContact={this.addContact} contacts={this.state.contacts} />
         <h2>Contacts</h2>
         <Filter onInput={this.onFilterInput} />
-        <Contacts
-          contacts={this.state.contacts}
-          filter={this.state.filter}
+        <Contacts        
+          
           filteredContacts={this.filteredContacts}
           deleteContact={this.deleteContact}
         />
